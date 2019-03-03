@@ -1,0 +1,497 @@
+/*
+**
+** @keyframes **
+**
+*/
+
+@keyframes transition {
+  0% {
+     margin-left: -800px; 
+  }
+  100% { 
+    margin-top: 0;
+    opacity:1; 
+  }
+}
+
+@keyframes apparition {
+  0% { 
+    opacity:0; 
+  }
+  100% {
+     opacity:0.8; 
+  }
+}
+
+@keyframes disparition {
+  0% { 
+    opacity:0.8; 
+  }
+  25% { 
+    opacity:0.6; 
+  }
+  50% { 
+    opacity:0.4; 
+  }
+  75% { 
+    opacity:0.2; 
+  }
+  100% {
+     opacity:0; 
+  }
+}
+
+/* 
+** Police des titres 
+*/
+@font-face {
+	font-family: "anirm";
+	src: url("../fonts/anirm___.ttf");
+}
+
+/* 
+** Symboles entourant les titres 
+*/
+@font-face {
+	font-family: "tngani";
+	src: url("../fonts/tngani.ttf");
+}
+
+/* 
+** Police des textes 
+*/
+
+@font-face {
+	font-family: "partybusiness";
+	src: url("../fonts/partybusiness.ttf");
+}
+
+body {
+	font-family: "partybusiness", Helvetica, Arial, sans-serif !important;
+	font-size: 25px !important;
+}
+
+.bg-org {
+  background-color: #FE661D !important;
+}
+.inline {
+    display:inline-block;
+}
+
+.carousel-caption {
+  height:60%;
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+  font-size: 2rem;
+}
+/* 
+** Navbar
+*/
+
+.navbar li  {
+  padding:5px;
+}
+.navbar li a {
+  color:white;
+  text-decoration:none;
+}
+
+/* 
+** END Navbar
+*/
+
+#fellows, 
+#best-hunters,
+#join-army  {
+  background-image: url("../images/bg_light.png");
+}
+
+#reward,
+#about-the-ring,
+#contact-us {
+  background-image: url("../images/bg_dark.png");
+  color:#fff;
+}
+
+
+h2 {
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+  font-size: 1.5rem;
+}
+h2::before,
+h2::after {
+  content: " ij ";
+  font-family: "tngani", Helvetica, Arial, sans-serif !important;
+  color:#FE661D;
+  font-size: 2rem;
+  vertical-align:top;
+}
+
+.anirm {
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+}
+.nav-pills a {
+  font-size:1rem;
+  color:#64635F !important;
+}
+.nav-pills .active {
+  background:none !important;
+  color:#FE661D !important;
+}
+.nav-pills .active::before,
+.nav-pills .active::after {
+  content: " b ";
+  color:#FE661D;
+  font-family: "tngani";
+  font-size:1rem;
+}
+
+.card {
+  background-color: #141416;
+  color:#64635F;
+}
+.wanted {
+	position:relative;
+}
+.wanted img {
+	opacity:0.5;
+}
+.wanted .coins {
+  position:absolute;
+  top:5%;
+  left:10%;
+  background:#fff;
+  border-radius:10px;
+  opacity:0.8;
+  z-index:1;
+  width:80%;
+  color:#000;
+  opacity:0.8;
+  animation: apparition .9s ease-out;
+}
+.wanted .coins .reward {
+  text-align:center;
+  padding:6% 1%;
+  font-weight:bold;
+}
+.wanted .coins .reward strong {
+  color: #FE661D;
+}
+.wanted .username {
+  position:absolute;
+  color:#fff;
+  top:47%;
+  width:100%; 
+  text-align:center;
+  transition: .5s ease-out;
+  animation: apparition .7s ease-out;
+}
+.wanted .dead {
+  position:absolute;
+  color:#FE661D;
+  top:7%;
+  width:100%; 
+  text-align:center;
+  transition: .5s ease-out;
+}
+.wanted:hover .coins {
+  opacity:0;
+  animation: disparition .4s ease-in;
+}
+.wanted:hover img {
+  opacity:1;
+}
+.wanted:hover .username {
+  position:absolute;
+  color:#fff;
+  top:85%;
+  width:100%; 
+  text-align:center;
+  transition: .5s ease-in;
+}
+.wanted:hover .dead {
+  position:absolute;
+  color:#FE661D;
+  top:75%;
+  width:100%; 
+  text-align:center;
+  transition: .5s ease-in;
+}
+
+.contact-reward {
+  text-align:center;
+}
+
+.media-body .username {
+  color:#FE661D;
+}
+
+.media-body .profil a {
+  color:#000;
+  text-decoration: underline;
+}
+
+/**
+**
+** #about-the-ring
+**
+**
+**/
+
+#about-the-ring .card-header {
+  background-color: #FE661D;
+  color:#fff;
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+}
+#about-the-ring .card-body {
+  background-color: #DEDEDE;
+  color:#fff;
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+}
+#about-the-ring .card-body .partybusiness {
+  font-family: "partybusiness", Helvetica, Arial, sans-serif !important;
+  font-size:2.5rem;
+  color:#303030;
+}
+#about-the-ring .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+#about-the-ring .table td {
+  border-top: 2px solid #BDBCBC;
+  color:#6C6C6C;
+  padding-left:35px;
+  font-size:1rem;
+}
+#about-the-ring .table thead th {
+  border-bottom: 3px solid #676360;
+}
+#about-the-ring .blockquote {
+  color:#303030;
+  vertical-align:middle;
+  font-family: "partybusiness", Helvetica, Arial, sans-serif !important;
+  font-size:2rem;
+}
+
+/**
+**
+** #join-army
+**
+**
+**/
+
+#join-army .more-info {
+  text-align:center;
+}
+
+#join-army h2 {
+  color:#FE661D;
+}
+
+#join-army h2::before,
+#join-army h2::after {
+  content: '';
+}
+
+
+
+.fa-fw {
+  text-align: center;
+  vertical-align:bottom;
+}
+.input-group-addon {
+  color:#808080;
+  border-color:#808080;
+  background-color:#f1f9f7;
+  padding:0 10px 0 10px;
+  font-size:1.25rem;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+form .form-control {
+  font-family: "anirm";
+  font-size: 1rem;
+}
+
+/*
+**
+** BOUTTON **
+**
+*/
+
+.btn-precious {
+  background:#fff;
+  color:#FE661D;
+  padding:10px;
+  font-family: "anirm";
+}
+.btn-precious:hover {
+  background:#FE661D;
+  color:#fff;
+  padding:10px;
+  font-family: "anirm";
+}
+.btn-contact {
+  background:#fff;
+  color:#FE661D;
+  padding:10px;
+  font-family: "anirm";
+}
+.btn-contact:hover {
+  background:#FE661D;
+  color:#fff;
+  padding:10px;
+  font-family: "anirm";
+}
+.btn-hace {
+  background:#111111;
+  color:#FE661D;
+  padding:5px;
+}
+.btn-hace:hover {
+  background:#FE661D;
+  color:#111111;
+}
+.btn-more-info {
+  background:#111111;
+  color:#FE661D;
+  padding:10px;
+  font-family: "anirm", Helvetica, Arial, sans-serif !important;
+}
+.btn-more-info:hover {
+  background:#FE661D;
+  color:#111111;
+}
+
+/*
+**
+** FOOTER **
+**
+*/
+
+#footer {
+  clear: both;
+  position: relative;
+  padding: 4em 0 1em 0;
+  background: #FE661D;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "anirm";
+}
+#footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -4em;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background: #FE661D;
+  z-index: -1;
+}
+#footer .footer-copyright {
+  margin-top: 5em;
+  color:#fff;
+}
+#footer .footer-links {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+#footer .footer-links li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#footer .footer-links li a {
+  color: #fff;
+  text-decoration:none;
+}
+
+
+/*
+**
+** @media **
+**
+*/
+
+@media screen and (max-width: 527px) {
+    body {
+      opacity:1;
+      /*animation: transition 0.2s ease-in-out;*/
+    }
+    .wanted .coins .reward,
+    .card-text {
+      font-size:1.25rem;
+      line-height:1.25rem;
+    }
+    .wanted .username {
+      font-size:3.5rem;
+    }
+    .wanted .dead {
+      font-size:3.5rem;
+    }
+    .wanted:hover .username {
+      font-size:1.5rem;
+    }
+    .wanted:hover .dead {
+      font-size:2rem;
+    }
+    .btn-contact {
+      font-size:0.75rem;
+    }
+    .media-body {
+      line-height:2rem;
+    }
+    .media-body .username {
+      font-size:1.5rem;
+    }
+    .media-body .profil,
+    .media-body .profil a {
+      font-size:1rem;
+    }
+    #about-the-ring .card-header {
+      font-size: 1rem;
+    }
+    .btn-more-info {
+      font-size: .5rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+  .wanted .coins .reward,
+  .card-text {
+    font-size:2.5rem;
+    line-height:2.5rem;
+  }
+  .wanted .username {
+    font-size:5.5rem;
+  }
+  .wanted .dead {
+    font-size:5.5rem;
+  }
+  .wanted:hover .username {
+    font-size:2.5rem;
+  }
+  .wanted:hover .dead {
+    font-size:3rem;
+  }
+  .btn-contact {
+    font-size:1.5rem;
+  }
+  .media-body {
+    line-height:2.7rem;
+  }
+  .media-body .username {
+    font-size:3rem;
+  }
+  #about-the-ring .card-header {
+    font-size: 1.5rem;
+  }
+  .btn-more-info {
+    font-size: 1.5rem;
+  }
+  
+}
